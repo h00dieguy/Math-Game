@@ -1,0 +1,161 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: lightblue;
+    font-family: Montserrat, sans-serif;
+    /* font-size: 50px; */
+    text-align: center;
+}
+
+.wrapper {
+    background-color: grey;
+    width: 440px;
+    height: 350px;
+    margin: 20px auto;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 6px 6px black;
+}
+
+.cal {
+    background-color: black;
+    width: 345px;
+    /* height: 75px; */
+    padding: 10px;
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    margin-left: -175px;
+
+    font-size: 40px;
+    color: #808080;
+    border-radius: 5px;
+
+}
+
+.cal .cell {
+    margin: 0 5px;
+}
+
+.player {
+    position: absolute;
+    width: 425px;
+    top: 130px;
+    left: 50%;
+    margin-left: -210px;
+}
+
+.btn {
+    background: green;
+    color: #fff;
+    box-shadow: 0 6px #ab3c3c;
+    border: none;
+    font-size: 100px;
+    font-weight: 900;
+    width: 120px;
+    height:100px;
+    border-radius: 3px;
+    margin: 30px 30px;
+    padding: 1px 15px;
+    display: inline-block;
+    outline: none;
+    position: relative;
+}
+
+.btn:after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.btn:hover {
+    box-shadow: 0 8px #ab3c3c;
+    top: -2px;
+}
+
+.btn:active {
+    box-shadow: 0 0 #ab3c3c;
+    top: 6px;
+}
+
+.control {
+    display: none;
+    position: relative;
+    padding : 5px 0;
+    background: orange;
+    width: 360px;
+    margin: 30px auto;
+    border-radius: 5px;
+    box-shadow: 0 6px yellow;
+}
+
+.control .ctrl-button {
+    font-size: 35px;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.control:hover {
+    top: -2px;
+    box-shadow: 0 8px yellow;
+}
+
+.ctrl:active {
+    box-shadow: 0 0 #2980b9;
+    top: 6px;
+}
+
+.bar {
+    display: none;
+    position: relative;
+    width: 520px;
+    height: 50px;
+    margin: 30px auto;
+    background-color: #6BB9F0;
+    border-radius: 5px;
+}
+
+.progress {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 50px;
+    background-color: #2980b9;
+    border-radius: 5px;
+}
+
+/**/
+
+.game-over {
+    background: #87D37C;
+    width: 520px;
+    margin: 20px auto;
+    padding: 15px 0;
+    box-shadow: 6px 6px #3FC380;
+    border-radius: 10px;
+}
+
+p {
+    font-size: 28px;
+    color: #fff;
+}
+
+.new {
+    position: absolute;
+    top: 465px;
+    margin-left: 10px;
+    font-size: 32px;
+    text-transform: uppercase;
+    color: #cb4e4e;
+}
